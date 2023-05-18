@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="rps.css" />
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+
+  <body class="flex">
+    <div class="wrap flex">
+      <div class="title-blk flex">
+        <div class="tit">
+          <p>ROCK</p>
+          <p>PAPER</p>
+          <p>SCISSORS</p>
+        </div>
+        <div class="score flex">
+          <p class="tr">score</p>
+          <p class="sr">0</p>
+        </div>
+      </div>
+      <!-- deafult-game-section -->
+      <div class="play-section flex">
+        <div class="fr-line flex">
+          <div data-clicked="false" class="pap sticks">
+            <img src="images/icon-paper.svg" alt="Paper" />
+          </div>
+          <div data-clicked="false" class="scr sticks">
+            <img src="images/icon-scissors.svg" alt="Scissors" />
+          </div>
+        </div>
+        <div data-clicked="false" class="sc-line flex">
+          <div class="rck sticks">
+            <img src="images/icon-rock.svg" alt="Rock" />
+          </div>
+        </div>
+        <!-- deafult-game-section -->
+        <!-- game-section -->
+        <div class="game-section flex">
+          <div class="label flex">
+            <p>YOU PICKED</p>
+            <p>THE HOUSE PICKED</p>
+          </div>
+          <div class="game-holes flex">
+            <div class="hole-1 hl"></div>
+            <div class="stat">
+              <h1 class="lose txt">YOU LOSE</h1>
+              <h1 class="win txt">YOU WIN</h1>
+              <button class="play">PLAY AGAIN</button>
+            </div>
+            <div class="hole-2 hl"></div>
+          </div>
+        </div>
+        <!-- game-section -->
+      </div>
+    </div>
+    <div class="menu-section flex">
+      <a target="_blank" href="/rock-paper-scissors-master/pentagon.html"
+        ><button class="nxt-lvl menu">PENTAGON</button></a
+      >
+      <button class="menu rul">RULES</button>
+    </div>
+    <div draggable="true" class="rules-pic flex">
+      <div class="desc-ln flex">
+        <p>RULES</p>
+        <img
+          class="close"
+          style="width: 0.75em; aspect-ratio: 1; object-fit: cover"
+          src="images/icon-close.svg"
+          alt="icon-close"
+        />
+      </div>
+      <img src="images/image-rules.svg" alt="RULES" />
+    </div>
+
+    <script src="rps.js"></script>
+  </body>
+</html>
